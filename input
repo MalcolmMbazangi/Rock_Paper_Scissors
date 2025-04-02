@@ -1,0 +1,7 @@
+# Band Name Generator
+
+username = input("Enter your name")
+favorite_pet = input("Enter pet name")
+print (username + " " +favorite_pet )
+print ("Band name is" + " " +username+favorite_pet )
+

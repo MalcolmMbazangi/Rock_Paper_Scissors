@@ -1,0 +1,22 @@
+height = float(input("enter height in meters: "))
+weight = float(input("enter weight in kgs: "))
+
+def BMI(height, weight): 
+    bmi = weight/(height**2) * 703
+    if (bmi < 20):
+        return ("severely underweight", bmi)
+
+    elif (bmi >= 20 and bmi < 40.5):
+         return ("underweight", bmi)
+         
+    elif (bmi >= 40.5 and bmi < 75):
+         return ("healthy", bmi)
+
+    elif (bmi >= 75 and bmi < 90):
+         return ("overweight", bmi)
+
+    elif (bmi >= 90):
+         return ("obese", bmi)
+
+quote, bmi = BMI(height, weight)
+print("you bmi is: {} and you are: {}".format(bmi, quote))
